@@ -1,0 +1,1 @@
+##Review Clinical Note Section for text element ID from C-CDA

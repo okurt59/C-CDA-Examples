@@ -1,0 +1,61 @@
+	  <!--Consultation Notes-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+          <code code="11488-4" displayName="Consult Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Consult Note</title>
+          <text ID="Note1">
+            <table><colgroup><col width="40%" /><col width="20%" /><col width="40%" /></colgroup><tbody><tr><td><content>Pulse oximetry greater than or equal to 92%</content></td><td><content styleCode="Bold">Goal Set: </content><content styleCode="Italics">2-Sep-2013 </content></td><td><content styleCode="Underline">Patient and Provider Goal</content></td></tr><tr><td colspan="3"><content styleCode="Bold">Related To:</content></td></tr><tr><td colspan="3"><content styleCode="Underline"> •</content><content><content styleCode="Italics">Smokes daily</content></content></td></tr></tbody></table><br />
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+              <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <translation code="11488-4" displayName="Consult Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              </code>
+              <text>
+                <reference value="#Note1" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime value="20201013" />
+              <!--Assigned Author-->
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+                <time value="20201013" />
+                <assignedAuthor>
+                  <id extension="1306822366" root="2.16.840.1.113883.4.6" />
+                  <code code="152W00000X" displayName="Optometrist" codeSystem="2.16.840.1.113883.6.101" codeSystemName="HealthCareProviderTaxonomy" />
+                  <addr use="WP">
+                    <streetAddressLine>3034 Broadway Blvd.</streetAddressLine>
+                    <streetAddressLine nullFlavor="NI" />
+                    <city>Garland</city>
+                    <state>TX</state>
+                    <postalCode>75041-3732</postalCode>
+                    <country>USA</country>
+                  </addr>
+                  <telecom use="WP" value="(972) 278-2121" />
+                  <assignedPerson>
+                    <name>
+                      <given>Robert</given>
+                      <family>Day, Jr. O.D.</family>
+                    </name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id nullFlavor="UNK" />
+                    <name>Broadway Eye Center</name>
+                    <telecom nullFlavor="NI" />
+                    <addr>
+                      <streetAddressLine nullFlavor="NI" />
+                      <streetAddressLine nullFlavor="NI" />
+                      <city nullFlavor="NI" />
+                      <state nullFlavor="NI" />
+                      <postalCode nullFlavor="NI" />
+                      <country nullFlavor="NI" />
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </act>
+          </entry>
+        </section>
+      </component>
